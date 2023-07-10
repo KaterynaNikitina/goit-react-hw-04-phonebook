@@ -1,10 +1,10 @@
 
-import ListItem from 'components/ListItem/ListItem';
+import { ListItem } from 'components/ListItem/ListItem';
 import PropTypes from 'prop-types';
 
 import { List } from './ContactList.styled';
 
-const ContactList = ({ contacts, onClick }) => {
+export const ContactList = ({ contacts, onClick }) => {
      return (
      <List>
       {contacts.map(({ id, name, number }) => {
@@ -21,8 +21,6 @@ const ContactList = ({ contacts, onClick }) => {
       })}
     </List>
 )};
-
-export default ContactList;
 
 
 ContactList.propTypes = {

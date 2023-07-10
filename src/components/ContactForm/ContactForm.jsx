@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Form, Button, Label, Input } from './ContactForm.styled';
 
-const ContactForm = ({ onSubmit }) => {
+export const ContactForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
 
@@ -68,8 +68,6 @@ const ContactForm = ({ onSubmit }) => {
     );
   };
 
-
-export default ContactForm;
 
 ContactForm.propTypes = {
   onSubmit: PropTypes.func,
