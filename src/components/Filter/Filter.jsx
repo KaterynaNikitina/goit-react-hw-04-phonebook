@@ -9,7 +9,7 @@ export const Filter = ({ value, onChange }) => {
             type="text" 
             value={value}
             placeholder="enter name"            
-            onChange={onChange}>
+            onChange={e => onChange(e.currentTarget.value)}>
             </Input>
         </Label>
     )

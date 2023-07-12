@@ -37,6 +37,8 @@ const App = () => {
   const normalizedFilter = filter.toLowerCase();
   const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(normalizedFilter)
+
+    
   );
 
   return (
